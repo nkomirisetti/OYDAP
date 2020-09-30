@@ -1,0 +1,135 @@
+body {
+    background: #444;
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 520px;
+}
+
+
+#namebox, #textbox {
+    position: relative;
+    margin: 5px 0;
+
+    background: #333;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 3px 3px 3px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 3px 3px 3px 0px rgba(0,0,0,0.1);
+    box-shadow: inset 3px 3px 3px 0px rgba(0,0,0,0.1);
+}
+
+#namebox {
+    width: 100px;
+    height: 30px;
+    padding: 5px 15px 2px 15px;
+    text-align: center;
+}
+
+#textbox {
+    height: 120px;
+    padding: 10px 15px;
+}
+
+
+p {
+    font-family: 'Varela Round', sans-serif;
+    display: inline;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#name {
+    color: #ccc;
+    font-size: 1.5em;
+    font-family: 'Varela Round', sans-serif;
+    letter-spacing: 0px;
+}
+
+#measure {
+    visibility: hidden;
+    font-size: 1.5em;
+    font-family: 'Varela Round', sans-serif;
+    position: absolute;
+}
+
+#text {
+    color: #fff;
+    font-size: 2em;
+    line-height: 1.2em;
+    padding: 0;
+}
+
+
+#buttonArea {
+    width: 50%;
+    margin: 0 auto;
+}
+
+input[type=button] {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.5em;
+    background: #333;
+    color: #ccc;
+    opacity: 0.0;
+
+    cursor: pointer;
+
+    position: relative;
+    margin: 5px 0;
+    width: 100%;
+    padding: 3px;
+    text-align: center;
+
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 5px #222, 3px 3px 3px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 5px #222, 3px 3px 3px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 5px #222, 3px 3px 3px 0px rgba(0,0,0,0.1);
+}
+
+input[type=button]:hover {
+    background: #3c3c3c;
+    color: #fff;
+}
+input[type=button]:active, input[type=button].clicked {
+    box-shadow: 0 2px #222, 1px 1px 1px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 2px #222, 1px 1px 1px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 2px #222, 1px 1px 1px 0px rgba(0,0,0,0.1);
+    transform: translateY(3px);
+}
+
+
+#cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+#next {
+    position: absolute;
+    right: 14px;
+    bottom: 0;
+    
+    font-size: 2em;
+    color: #ccc;
+    
+    animation: blink-animation 1s steps(3, start) infinite;
+    -webkit-animation: blink-animation 1s steps(3, start) infinite;
+}
+@keyframes blink-animation {
+    to {
+        transform: translateX(8px);
+    }
+}
+@-webkit-keyframes blink-animation {
+    to {
+        transform: translateX(8px);
+    }
+}

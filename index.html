@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="story.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <p id="measure"></p>
+
+    <div id="imagebox">
+        <img id="image" src="backgrounds/act_one.jpg" alt="Girl in a jacket" width="520" height="300">
+    </div>
+
+    <div id="namebox">
+        <p id="name" style="letter-spacing: 1.25px; margin-right: -1.25px;"></p>
+        <div id="cover"></div>
+    </div>
+
+    </div>
+    <div id="textbox">
+        <p id="text"><span style="color: #fff"> Click here to start this story</span></p>
+        <div id="next" style="visibility: hidden;">➜</div>
+        <div id="cover" style="cursor: pointer;" onclick="next()"></div>
+    </div>
+
+    <div id="buttonArea">
+        <input type="button" id="button0" value="" style="opacity: 0;">
+        <input type="button" id="button1" value="" style="opacity: 0;">
+    </div>
+</body>
+
+</html>
