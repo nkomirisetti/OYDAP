@@ -215,7 +215,6 @@ function getNextLine() {
         // Background
         else if (params = /\{background}\s+(\w+)/.exec(line)) {
             setBackground(params[1]);
-            console.log('Setting background');
             currentLine += 1;
         }
 
@@ -380,6 +379,10 @@ function parseComparison(a, b, op) {
 
 
 function next() {
+    if (!initialStart){
+        audio.play();
+        initialStart = true;
+    }
     if (cursor <= currentText.length && !forceNext) {
         skipMode = true;
     } else if (!(currentLine in choices) && currentLine < dialogue.length - 1) {
