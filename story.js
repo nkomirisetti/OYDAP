@@ -1,4 +1,5 @@
 let RAW_SCRIPT = `
+{stop-music} stop
 {background} act_one
 [LOG] <t> #green August 2018  ___ \\ First Day of Classes ___ \\ Gardner Hall
 [] #blue <s> *phew*
@@ -11,17 +12,17 @@ let RAW_SCRIPT = `
 [] #blue Alright, _ let me go and save some seats for Shreya and Robert
 [] #blue I can already tell I'm gonna dread \\ this class...
 [] #blue Well I heard it's better than linear \\ algebra... 
-[] #blue So I'm sure It'll be <s> fineeeeeee ____ ?
+[] #blue So I'm sure it'll be <s> fineeeeeee ____ ?
 [] #blue I'll go ahead and text them and \\ let them know I saved them seats
 [] Oh? __ \\ Looks like I got a text from... \\ ___ Sophia?
 []  ...
 
 [Nikhil] Hi, _ my name is Nikhil.
 [Nikhil] I'll admit, __ I'm not the main \\ character of this story... 
-[Nikhil] But I know the star __ <f> pretty well
+[Nikhil] But I do know the star __ <f> pretty well
 [Nikhil] This story begins here, \\ __ in STOR 435
 [Nikhil] <s> ... __ \\ <n> Not the most romantic start ___ I know
-[Nikhil] <s> But bare with me... 
+[Nikhil] <s> But bear with me... 
 [Nikhil] It gets really good
 
 [] ...
@@ -105,7 +106,6 @@ let RAW_SCRIPT = `
 {goto} game_over
 
 {label} go_over
-{stop-music} stop
 [Nikhil] Oh wow, _ \\ <s> that is a tempting offer...
 [Nikhil] You know what? __ \\ I might actually take you up on \\ that!
 [Sophia] <f> Aw heck yeah! \\ _ <n> When are you free?
